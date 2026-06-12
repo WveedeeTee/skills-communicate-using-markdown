@@ -8,16 +8,8 @@
 
 ## Review
 
-- item 1
-- item 2
-- item 3
+Convert an image or video from dark mode to light mode using [ffmpeg](https://www.ffmpeg.org)
 
-1. step 1
-1. step 2
-1. step 3
-
-- [x] Task complete
-- [ ] Task todo
-
-- [x] This task is complete
-- [ ] This task is not complete
+```bash
+ffmpeg -i input.mp4 -vf "negate,hue=h=180,eq=contrast=1.2:saturation=1.1" output.mp4
+```
